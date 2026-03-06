@@ -16,5 +16,18 @@ public class test {
         System.out.printf(String.valueOf(d));
         System.out.printf(String.valueOf(e));
         System.out.printf(String.valueOf(f));
+
+        int w =5;
+        int b1= w++;
+        System.out.println(w);
+        System.out.println(b1);
+        System.out.println(++b1);
+        System.out.println(w + --b1);//원인 이 모르겠지만 안찍히죠
+
+        int m= 2;
+        int n= --a;
+        System.out.println(m++);
+        System.out.println(n--);
+
     }
 }
