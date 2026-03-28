@@ -1,16 +1,26 @@
-//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
-// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
+import java.util.Scanner;
+
+class Solution {
+    public String solution(String str1, String str2) {
+        String answer = "";
+
+        for (int i = 0; i < str1.length(); i++) {
+            answer += str1.charAt(i);
+            answer += str2.charAt(i);
+        }
+
+        return answer;
+    }
+}
+
 public class Main {
     public static void main(String[] args) {
-        int a =5;
-        a= a+5;
-        a=a-2;
-        a=a * 4;
-        a=a/3;
-        a=a%5;
-        System.out.println(a);
-        int num1 = 5, num2= 10;
-        int result = num1 -num2 >0 ? num1 : num2;
-        System.out.println("두 정수 중 더 큰 정수는"+result+"입니다");
+        Scanner sc = new Scanner(System.in);
+
+        String str1 = sc.next();
+        String str2 = sc.next();
+
+        Solution sol = new Solution();
+        System.out.println(sol.solution(str1, str2));
     }
 }
